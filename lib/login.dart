@@ -10,9 +10,6 @@ class Myapp extends StatefulWidget {
 }
 
 class _MyappState extends State<Myapp> {
-  //final _auth = FirebaseAuth.instance;
-  String email = '';
-  String password = '';
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
