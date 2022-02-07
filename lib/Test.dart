@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   });
                 }),
             ElevatedButton(
-              child: const Text('Signup'),
+              child: const Text('Signups'),
               onPressed: () async {
                 auth
                     .createUserWithEmailAndPassword(
