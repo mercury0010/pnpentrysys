@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'RegPersonnel.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'Guest.dart';
 
 class Authentication {
   register_personnel RegisterPer;
@@ -88,6 +89,7 @@ class Authentication {
   Future loginWithFacebook() async {}
 
   //createUserWithEmailAndPassword({String email, String password}) {}
+
 }
 
 Future<String> signup({required String email, required String password}) async {

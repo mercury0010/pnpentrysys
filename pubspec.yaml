@@ -42,6 +42,21 @@ dependencies:
   provider: ^6.0.2
   audioplayers: ^0.20.1
   font_awesome_flutter: ^9.1.0
+  qr_flutter: ^4.0.0
+  ai_barcode: ^3.0.1
+  qr_scanner_web: ^0.0.8
+  syncfusion_flutter_datagrid: ^19.4.53
+  location: ^4.3.0
+  image_picker_for_web: ^2.1.6
+  image_picker: ^0.8.4+11
+  firebase_storage: ^10.2.9
+  mime_type: ^1.0.0
+  path: ^1.8.0
+  file_picker: ^4.5.1
+  firebase: ^9.0.2
+  uuid: ^3.0.6
+  schedulers: ^0.3.1
+  cron: ^0.4.1
 
 dev_dependencies:
   flutter_test:
@@ -59,7 +74,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -68,7 +82,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     
-    - assets/images/
+    - assets/images/sampleprofile.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

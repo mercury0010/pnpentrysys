@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:pnpvehicleentry/auth/population.dart';
+import 'dashboard.dart';
 import 'main.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -10,6 +11,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'auth/authenticator.dart';
 
 import 'package:firebase_core/firebase_core.dart';
+import 'qr_scanner_web.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -35,6 +37,8 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   late final AudioCache _audioCache;
+
+  void Function(String result)? get re => null;
 
   @override
   void initState() {
@@ -205,12 +209,15 @@ class _HomeState extends State<Home> {
                                   .signInWithEmailAndPassword(
                                       email: _email, password: _password)
                                   .then((_) {
-                                Navigator.of(context).pushReplacement(
-                                    MaterialPageRoute(
-                                        builder: (context) => Home()));
+                                var current;
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => DashboardPage()));
                               });
                             },
-                          )
+                          ),
+                          SizedBox(
+                            width: 20.0,
+                          ),
                         ],
                       ),
                     ],
