@@ -1,7 +1,7 @@
 import 'dart:html';
 import 'dart:js';
 import 'package:flutter/material.dart';
-import 'package:pnpvehicleentry/Test.dart';
+import 'package:pnpvehicleentry/WelcomePage.dart';
 import 'package:pnpvehicleentry/auth/population.dart';
 import 'loginScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -10,7 +10,7 @@ import 'auth/authenticator.dart';
 import 'auth/RegPersonnel.dart';
 import 'loginScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'Test.dart';
+import 'WelcomePage.dart';
 import 'employee_login.dart';
 import 'home.dart';
 import 'auth/addGuest.dart';

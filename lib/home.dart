@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:pnpvehicleentry/auth/authenticator.dart';
 import 'package:pnpvehicleentry/auth/population.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'Test.dart';
+import 'WelcomePage.dart';
 import 'package:intl/intl.dart';
 import 'dashboard.dart';
 import 'profiling.dart';
@@ -14,7 +14,7 @@ import 'my_drawer_header.dart';
 import 'settings.dart';
 import 'privacy_policy.dart';
 import 'send_feedback.dart';
-import 'TESTDATA.dart';
+import 'TimeLogs.dart';
 import 'package:flutter/scheduler.dart';
 
 class MyApp extends StatelessWidget {

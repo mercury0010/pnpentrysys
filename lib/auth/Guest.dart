@@ -1,3 +1,4 @@
+//model for database
 class GuestData {
   String QRcode;
   String email;

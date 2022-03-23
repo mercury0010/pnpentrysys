@@ -1,3 +1,4 @@
+//model for database
 class eqr {
   String uid;
   String qr;

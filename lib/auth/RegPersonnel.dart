@@ -1,4 +1,5 @@
 // ignore: camel_case_types
+//model for database
 class register_personnel {
   String uid;
   String perName;

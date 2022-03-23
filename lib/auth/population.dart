@@ -1,4 +1,5 @@
 // ignore: camel_case_types
+//model for database
 class pop {
   String id;
   String current;

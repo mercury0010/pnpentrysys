@@ -9,6 +9,7 @@ class GuestService {
 
   final CollectionReference currentV =
       FirebaseFirestore.instance.collection('vehiclepop');
+  //add Guest to the guest database
   Future<DocumentReference<Object?>> createGuest(GuestData guest) async {
     Map<String, dynamic> data = {
       "QRcode": guest.QRcode,
@@ -20,28 +21,6 @@ class GuestService {
     print(ref);
     return ref;
   }
+  //
 
-  Stream<List<GuestData>> getGuest() {
-    return guests.snapshots().map((QuerySnapshot snapshot) {
-      return snapshot.docs.map((doc) {
-        return GuestData(
-          QRcode: doc.get('QRcode'),
-          email: doc.get('email'),
-          name: doc.get('name'),
-          plate: doc.get('plate'),
-        );
-      }).toList();
-    });
-  }
-
-  Stream<List<pop>> getItems() {
-    return currentV.snapshots().map((QuerySnapshot snapshot) {
-      return snapshot.docs.map((doc) {
-        return pop(
-          id: doc.id,
-          current: doc.get('current'),
-        );
-      }).toList();
-    });
-  }
 }
